@@ -1,0 +1,109 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+body {
+    font-family: 'Source Code Pro', monospace;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+/* Main container */
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #f2e7fa;
+}
+
+/* Box styling (similar to login box) */
+.mainBox {
+    font-family: 'Source Code Pro', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+/* Heading */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* File input styling */
+input[type="file"] {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #7b1e44;
+    transition: background-color 0.3s;
+}
+
+button
+{
+    background-color: #7b1e44;
+    color: white;
+}
+
+    button:hover {
+        background-color: #5e1633;
+    }
+
+
+/* Status message */
+p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.infoIcon {
+    margin-left: 8px;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+}
+
+    .infoIcon:hover {
+        color: #000;
+    }
+
+.tooltip {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    max-width: 260px;
+    white-space: normal;
+    transform: translateX(-50%);
+    z-index: 1000;
+    pointer-events: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    line-height: 1.4;
+    transition: opacity 0.2s ease-in-out;
+}
